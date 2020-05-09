@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+int main()
+{
+   long long n,m,sum=0;
+   cin>>n>>m;
+   long long arr[m];
+   for(int i=1;i<=m;i++)
+   {
+       cin>>arr[i];
+       sum=sum+arr[i];
+   }
+   long long ans=n-sum;
+   if(ans>=0)
+    cout<<ans<<endl;
+    else
+        cout<<-1<<endl;
+    return 0;
+ 
+}
